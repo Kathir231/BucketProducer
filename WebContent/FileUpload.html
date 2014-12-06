@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+  $("#Upload").change(function(){
+    alert($("#Upload").val());
+  });
+</script>
+<head>
+<meta charset="ISO-8859-1">
+<title>File Uploading Form</title>
+<body>
+		<h3>File Upload:</h3>
+		<form action="FileUpload" method="post"
+                        enctype="multipart/form-data">
+			<input type="file" name="file" id="Upload" size="50"></input>
+			<br>
+			<input type="submit" value="Upload File" />
+			</form>
+	</body>
+
+</html>
